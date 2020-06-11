@@ -19,9 +19,9 @@ def long_planeteer_calls(planeteer_calls)
   # Return the boolean result of this check
   planeteer_calls.each do |element|
     element.length > 4
-    puts element
-    puts element.length
     return true
+  else
+    return nil
   end
 end
 
