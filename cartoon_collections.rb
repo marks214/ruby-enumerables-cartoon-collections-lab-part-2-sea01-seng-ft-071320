@@ -19,10 +19,10 @@ def long_planeteer_calls(planeteer_calls)
   # Return the boolean result of this check
   planeteer_calls.each do |element|
     if element.length > 4
-    return true
+      return true
     else
-    return false
-  end
+      return false
+    end
   end
 end
 
@@ -31,6 +31,8 @@ def find_valid_calls(planeteer_calls)
   # Use an Enumerable to check if any elements in the passed in array match the valid calls listed above
   # Return the first valid call found, or return nil if no valid calls are found
   planeteer_calls.any? do |element|
+    puts element
+    puts valid_calls[element]
     element == valid_calls[element]
   end
 end
