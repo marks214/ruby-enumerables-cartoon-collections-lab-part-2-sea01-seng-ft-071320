@@ -20,6 +20,7 @@ def long_planeteer_calls(planeteer_calls)
   planeteer_calls.each do |element|
     element.length > 4
     puts element
+    puts element.length
     return true
   end
 end
