@@ -35,8 +35,8 @@ def find_valid_calls(planeteer_calls)
     if element == valid_calls[i]
       return valid_calls[i]
     else
-      return false
+      i += 1
     end
-    i += 1
   end
+  return false
 end
